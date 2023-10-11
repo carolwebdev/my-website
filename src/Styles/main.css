@@ -9,10 +9,10 @@
 
 :root {
     --primary-background-color: #2F4858;
-    --primary-text-color: white;
+    --primary-text-color: #F1F1E6;
     --primary-surface-color: #7F7F7F;
-    --secondary-background-color: #F9A826
-    --secondary-text-color: black;
+    --secondary-background-color: #F9A826;
+    --secondary-text-color: #FFEBCC;
     --secondary-surface-color: #F2E9E4;
 }
 
@@ -96,4 +96,45 @@ header .nav-btn {
         font-size: 1.5rem;
     }
 
+}
+
+/**
+* Timeline
+*/
+
+.timeline {
+    background-color: var(--primary-background-color);
+    color: rgb(70, 69, 69);
+}
+
+.timeline .title {
+    font-size: 5em;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.timeline .title h3 {
+    padding-top: 0.25em;
+}
+
+.vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(188, 186, 186, 0.251), 0 0.4em 1.25em 0 rgba(175, 170, 170, 0.15) !important;
+    padding: 2em 3em !important;
+}
+
+.timeline .date {
+    color: var(--secondary-text-color);
+}
+
+#description {
+    margin: 1.5em 0 2em 0;
+}
+
+@media only screen and (max-width: 1169px) {
+    .vertical-timeline-element-date {
+        display: block !important;
+        float: none !important;
+        color: rgb(44, 44, 44) !important;
+        margin-top: 1.5em;
+    }
 }
